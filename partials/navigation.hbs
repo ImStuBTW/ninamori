@@ -1,0 +1,5 @@
+<ul class="nav navbar-nav navbar-right">
+	{{#foreach navigation}}
+		<li class="nav-{{slug}} navbar-link" role="presentation"><a href="{{url absolute="true"}}">{{label}}</a></li>
+	{{/foreach}}
+</ul>

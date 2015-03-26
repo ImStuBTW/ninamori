@@ -1,0 +1,50 @@
+{{!< default}}
+{{> link_blog_header}}
+<div class="container">
+	<div class="row">
+		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+<<<<<<< HEAD
+			<main class="main-ghost" role="main">
+				{{#foreach posts}}
+					<article class="article-ghost" role="article" itemscope itemtype="http://schema.org/Article">
+						<header class="postheader-ghost">
+							<h1 class="posttitle-ghost" itemprop="headline"><a href="{{{url}}}" rel="bookmark">{{title}}</a></h1>
+						</header>
+						<div class="postexcerpt-ghost" itemprop="articleBody">
+							{{excerpt words="20"}} <span class="read-more"><a href="{{{url}}}">Read More &raquo;</a></span>
+						</div>
+						<div class="date-and-tags-ghost">Posted <time class="date-ghost" datetime="{{date format="MM-DD-YYYY"}}" itemprop="datePublished">{{date format='MMMM wo, YYYY'}}</time>{{#if tags}}<span class="posttags-ghost">, Under: {{tags separator=" "}}</span>{{/if}}</div>
+=======
+			<main class="main_ghost" role="main">
+				{{#foreach posts}}
+					<article class="article_ghost" role="article" itemscope itemtype="http://schema.org/Article">
+						<header class="postheader_ghost">
+							<h1 class="posttitle_ghost" itemprop="headline"><a href="{{{url}}}" rel="bookmark">{{title}}</a></h1>
+						</header>
+						<div class="postexcerpt_ghost" itemprop="articleBody">
+							{{excerpt words="20"}} <span class="read-more"><a href="{{{url}}}">Read More &raquo;</a></span>
+						</div>
+						<div class="date_and_tags_ghost">Posted <time class="date_ghost" datetime="{{date format="MM-DD-YYYY"}}" itemprop="datePublished">{{date format='MMMM wo, YYYY'}}</time>{{#if tags}}<span class="posttags_ghost">, Under: {{tags separator=" "}}</span>{{/if}}</div>
+>>>>>>> origin/master
+					</article>
+					<hr>
+				{{/foreach}}
+				{{#if pagination}}
+<<<<<<< HEAD
+					<div class="pagination-ghost">
+=======
+					<div class="pagination_ghost">
+>>>>>>> origin/master
+						{{{pagination}}}
+					</div>
+				{{/if}}
+			</main>
+		</div>
+	</div>
+</div>
+<<<<<<< HEAD
+<hr class="endpost-ghost">
+=======
+<hr class="endpost_ghost">
+>>>>>>> origin/master
+{{> footer}}

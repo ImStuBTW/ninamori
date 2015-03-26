@@ -1,0 +1,45 @@
+{{#post}}
+{{#has tag="tech"}}
+<div class="image-header-post" style="background-image: url('{{asset 'images/post-bg-tech.jpg'}}');">
+{{else}}
+	{{#has tag="board-games"}}
+		<div class="image-header-post" style="background-image: url('{{asset 'images/post-bg-board.jpg'}}');">
+	{{else}}
+		{{#has tag="video-games"}}
+			<div class="image-header-post" style="background-image: url('{{asset 'images/post-bg-video.jpg'}}');">
+		{{else}}
+			{{#has tag="lgbt"}}
+				<div class="image-header-post" style="background-image: url('{{asset 'images/post-bg-lgbt.jpg'}}');">
+			{{else}}
+				{{#has tag="news"}}
+					<div class="image-header-post" style="background-image: url('{{asset 'images/post-bg-news.jpg'}}');">
+				{{else}}
+					<div class="image-header-post" style="background-image: url('{{asset 'images/post-bg.jpg'}}');">
+				{{/has}}
+			{{/has}}
+		{{/has}}
+	{{/has}}
+{{/has}}
+{{/post}}
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="header-text">
+                    {{#post}}
+                    <h1 class="post-title">{{title}}</h1>
+                    <h3 class="post-subtitle">
+<<<<<<< HEAD:partials/post_header.hbs
+                        <time class="date-ghost" datetime="{{date format="YYYY-MM-DD"}}" itemprop="datePublished">{{date format='dddd DD MMM YYYY'}}</time>
+                    </h3>
+                    {{#if tags}}<h4 class="post-subtitle posttags-ghost">Posted Under: {{tags separator=", "}}</h4>{{/if}}
+=======
+                        <time class="date_ghost" datetime="{{date format="YYYY-MM-DD"}}" itemprop="datePublished">{{date format='dddd DD MMM YYYY'}}</time>
+                    </h3>
+                    {{#if tags}}<h4 class="post-subtitle posttags_ghost">Posted Under: {{tags separator=", "}}</h4>{{/if}}
+>>>>>>> origin/master:partials/post-header.hbs
+                    {{/post}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

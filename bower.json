@@ -1,0 +1,10 @@
+{
+  "name": "Ninamori",
+  "version": "1.0.0",
+  "dependencies": {
+    "bootstrap": "~3.3.1",
+    "highlightjs": "~8.0.0",
+    "bootstrap-sass-official": "~3.2.0",
+    "font-awesome": "~4.2.0"
+  }
+}

@@ -1,0 +1,17 @@
+{{#if @blog.cover}}
+<div class="image-header" style="background-image: url('{{@blog.cover}}');">
+{{else}}
+<div class="image-header" style="background-image: url('{{asset 'images/home-bg.jpg'}}');">
+{{/if}}
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-1">
+				<div class="header-text">
+					<h1 class="header-subtitle">Howdy! I'm</h1>
+					<h1 class="header-title">{{@blog.title}}</h3>
+					<h1 class="header-subtitle">{{@blog.description}}</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

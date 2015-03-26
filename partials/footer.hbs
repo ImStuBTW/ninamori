@@ -1,0 +1,119 @@
+<<<<<<< HEAD
+<footer class="footer-ghost">
+	<div class="container subscribe-ghost">
+        <h3 class="footer-greeting">Want to hear more from me?</h3>
+        <a class="icon-ghost" href="{{@blog.url}}/rss/">
+=======
+<footer class="footer_ghost">
+	<div class="container subscribe_ghost">
+        <h3 class="footer-greeting">Want to hear more from me?</h3>
+        <a class="icon_ghost" href="{{@blog.url}}/rss/">
+>>>>>>> origin/master
+            <span class="fa-stack fa-2x">
+                <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+            </span>
+        </a>
+<<<<<<< HEAD
+        <a class="icon-ghost" href="mailto:me@stuart-jones.com">
+=======
+        <a class="icon_ghost" href="mailto:me@stuart-jones.com">
+>>>>>>> origin/master
+            <span class="fa-stack fa-2x">
+                <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+            </span>
+        </a>
+<<<<<<< HEAD
+        <a class="icon-ghost" href="http://twitter.com/ImStuartJones">
+=======
+        <a class="icon_ghost" href="http://twitter.com/ImStuartJones">
+>>>>>>> origin/master
+            <span class="fa-stack fa-2x">
+                <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-twitter-ghost fa-stack-1x fa-inverse"></i>
+            </span>
+        </a>
+<<<<<<< HEAD
+        <a class="icon-ghost" href="http://github.com/ImStuartJones">
+=======
+        <a class="icon_ghost" href="http://github.com/ImStuartJones">
+>>>>>>> origin/master
+            <span class="fa-stack fa-2x">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-github-ghost fa-stack-1x fa-inverse"></i>
+            </span>
+        </a>
+    </div>
+	<div class="container">
+<<<<<<< HEAD
+		<div class="footertext-ghost">All content copyright <a href="/">{{@blog.title}}</a> &copy; 2015 &bull; All rights reserved &bull; Proudly published with <a class="icon-ghost" href="http://tryghost.org" target="_blank">Ghost</a></div>
+=======
+		<div class="footertext_ghost">All content copyright <a href="/">{{@blog.title}}</a> &copy; 2015 &bull; All rights reserved &bull; Proudly published with <a class="icon-ghost" href="http://tryghost.org" target="_blank">Ghost</a></div>
+>>>>>>> origin/master
+	</div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="{{asset "js/bootstrap.min.js"}}"></script>
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+	if($(window).width() < 900) {
+		$('#navbar-ghost').addClass('navbar-not-top');
+		$('.navbar-brand').addClass('navbar-not-blue');
+		$('.navbar-brand').addClass('navbar-not-brand');
+		$('.navbar-link').addClass('navbar-not-link');
+	}
+});
+
+// Hide Header on on scroll down
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var navbarHeight = $('.head').outerHeight();
+
+$(window).scroll(function(event){
+    didScroll = true;
+});
+
+setInterval(function() {
+    if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+    }
+}, 250);
+
+function hasScrolled() {
+    var st = $(this).scrollTop();
+    
+    // Make sure they scroll more than delta
+    if(Math.abs(lastScrollTop - st) <= delta)
+        return;
+    
+    // If they scrolled down and are past the navbar, add class .nav-up.
+    // This is necessary so you never see what is "behind" the navbar.
+    if (st > lastScrollTop && st > navbarHeight){
+        // Scroll Down
+        $('.head').removeClass('nav-down').addClass('nav-up');
+    } else {
+        // Scroll Up
+        //if(st + $(window).height() < $(document).height()) {
+            $('.head').removeClass('nav-up').addClass('nav-down');
+        //}
+    }
+
+    if($(window).width() > 900) {
+    if (st <= navbarHeight) {
+    	$('#navbar-ghost').removeClass('navbar-not-top').addClass('navbar-top');
+		$('.navbar-brand').removeClass('navbar-not-brand');
+		$('.navbar-link').removeClass('navbar-not-link');
+    }
+    else {
+    	$('#navbar-ghost').removeClass('navbar-top').addClass('navbar-not-top');
+		$('.navbar-brand').addClass('navbar-not-brand');
+		$('.navbar-link').addClass('navbar-not-link');
+    }
+	}
+
+    lastScrollTop = st;
+}
+</script>
