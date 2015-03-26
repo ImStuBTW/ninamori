@@ -1,4 +1,4 @@
-/*! Ninamori - v1.0.0 - 2015-03-25
+/*! Ninamori - v1.0.0 - 2015-03-26
 * http://stuart-jones.com/ninamori-theme
 * Copyright (c) 2015 Stuart Jones - MIT License
 */
@@ -6510,26 +6510,16 @@ a.navbar-not-brand:hover {
       .image-header-post .header-text .post-subtitle a:hover {
         color: #2a6596; }
 
-<<<<<<< HEAD
 .main-ghost img {
   width: 100%; }
 .main-ghost hr {
   background-color: #AAA;
   height: 1px; }
 .main-ghost blockquote {
-=======
-.main_ghost img {
-  width: 100%; }
-.main_ghost hr {
-  background-color: #AAA;
-  height: 1px; }
-.main_ghost blockquote {
->>>>>>> origin/master
   border-left: 1px solid;
   padding: 5px 20px 5px 10px;
   margin: 0px 0px 20px 20px;
   color: #888; }
-<<<<<<< HEAD
 .main-ghost .postexceptimg-ghost {
   float: left;
   height: 100%; }
@@ -6559,44 +6549,12 @@ a.navbar-not-brand:hover {
   .main-ghost .article-ghost .posttitle-ghost {
     margin: 10px 0px 10px 0px; }
   .main-ghost .article-ghost .date-and-tags-ghost {
-=======
-.main_ghost .postexceptimg_ghost {
-  float: left;
-  height: 100%; }
-.main_ghost .posttitle_ghost {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 700;
-  font-size: 36px; }
-  .main_ghost .posttitle_ghost a {
-    color: #333333; }
-  .main_ghost .posttitle_ghost a:hover {
-    color: #2a6596; }
-.main_ghost .postexcerpt_ghost {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 300;
-  font-size: 24px; }
-.main_ghost .postcontent_ghost {
-  font-family: 'Merriweather', serif;
-  font-weight: 300;
-  font-size: 18px; }
-.main_ghost .read-more {
-  font-size: 24px;
-  padding: 5px 0px 5px 0px; }
-.main_ghost .article_ghost {
-  margin: 25px 0px 25px 0px; }
-  .main_ghost .article_ghost .postheader_ghost {
-    margin: 10px 0px 10px 0px; }
-  .main_ghost .article_ghost .posttitle_ghost {
-    margin: 10px 0px 10px 0px; }
-  .main_ghost .article_ghost .date_and_tags_ghost {
->>>>>>> origin/master
     font-family: 'Merriweather', serif;
     font-style: italic;
     font-weight: 300;
     margin: 10px 0px 10px 0px;
     font-size: 16px;
     color: gray; }
-<<<<<<< HEAD
 .main-ghost .posttags-ghost a {
   padding: 3px 6px 3px 6px;
   background-color: #fafafa;
@@ -6620,42 +6578,13 @@ a.navbar-not-brand:hover {
   text-align: center;
   padding: 20px 0px 20px 0px; }
   .subscribe-ghost .icon-ghost {
-=======
-.main_ghost .posttags_ghost a {
-  padding: 3px 6px 3px 6px;
-  background-color: #fafafa;
-  color: #428bca; }
-.main_ghost .posttags_ghost a:hover {
-  color: #2a6596;
-  text-decoration: none; }
-
-.pagination_ghost .older-posts {
-  border-radius: 0px;
-  color: #333333; }
-.pagination_ghost .newer-posts {
-  border-radius: 0px;
-  color: #333333; }
-
-.endpost_ghost {
-  background-color: #AAA;
-  height: 1px; }
-
-.subscribe_ghost {
-  text-align: center;
-  padding: 20px 0px 20px 0px; }
-  .subscribe_ghost .icon_ghost {
->>>>>>> origin/master
     padding: 0px 5px 0px 5px;
     text-shadow: 1px 1px 1px #ccc; }
 
 .footer-greeting {
   margin-top: 0px; }
 
-<<<<<<< HEAD
 .footertext-ghost {
-=======
-.footertext_ghost {
->>>>>>> origin/master
   text-align: center;
   padding: 0px 0px 20px 0px; }
 
