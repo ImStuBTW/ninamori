@@ -1,5 +1,7 @@
+{{! Use default.hbs Layout}}
 {{!< default}}
-{{> link_blo_header}}
+{{! Use custom link_blog_header.hbs in place of standard Header }}
+{{> link_blog_header}}
 <div class="container">
 	<div class="row">
 		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -18,6 +20,7 @@
 				{{/foreach}}
 				{{#if pagination}}
 					<div class="pagination-ghost">
+						{{! Use pagenation.hbs }}
 						{{{pagination}}}
 					</div>
 				{{/if}}
@@ -26,4 +29,5 @@
 	</div>
 </div>
 <hr class="endpost-ghost">
+{{! Use footer.hbs }}
 {{> footer}}

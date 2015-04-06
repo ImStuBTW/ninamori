@@ -1,6 +1,7 @@
 <footer class="footer-ghost">
 	<div class="container subscribe-ghost">
         <h3 class="footer-greeting">Want to hear more from me?</h3>
+        {{! Font-Awesome stacked icons. No need for responsive code, they don't get too wird even on older iPhones.}}
         <a class="icon-ghost" href="{{@blog.url}}/rss/">
             <span class="fa-stack fa-2x">
                 <i class="fa fa-circle fa-stack-2x"></i>
@@ -30,9 +31,14 @@
 		<div class="footertext-ghost">All content copyright <a href="/">{{@blog.title}}</a> &copy; 2015 &bull; All rights reserved &bull; Proudly published with <a class="icon-ghost" href="http://tryghost.org" target="_blank">Ghost</a></div>
 	</div>
 </footer>
+{{! JQuery CDN}}
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+{{! Bootstrap Javascript }}
 <script src="{{asset "js/bootstrap.min.js"}}"></script>
+{{! Custom scrollspy script. Hides header when scrolling down, reveals when scrolling up.}}
 <script type="text/javascript">
+
+//Set Navbar to non-transparent coloring on small devices.
 jQuery(document).ready(function($) {
 	if($(window).width() < 900) {
 		$('#navbar-ghost').addClass('navbar-not-top');
@@ -78,17 +84,22 @@ function hasScrolled() {
         //}
     }
 
+    // These if statements change the color of the navbar.
+    // By default it's transparent at the top, and opqaue when not at the top.
+    // If on a mobile device, the navbar always stays opqaue.
     if($(window).width() > 900) {
-    if (st <= navbarHeight) {
-    	$('#navbar-ghost').removeClass('navbar-not-top').addClass('navbar-top');
-		$('.navbar-brand').removeClass('navbar-not-brand');
-		$('.navbar-link').removeClass('navbar-not-link');
-    }
-    else {
-    	$('#navbar-ghost').removeClass('navbar-top').addClass('navbar-not-top');
-		$('.navbar-brand').addClass('navbar-not-brand');
-		$('.navbar-link').addClass('navbar-not-link');
-    }
+        // Set opaque when not at the top.
+        if (st <= navbarHeight) {
+        	$('#navbar-ghost').removeClass('navbar-not-top').addClass('navbar-top');
+    		$('.navbar-brand').removeClass('navbar-not-brand');
+    		$('.navbar-link').removeClass('navbar-not-link');
+        }
+        // Set transparent when at the top.
+        else {
+        	$('#navbar-ghost').removeClass('navbar-top').addClass('navbar-not-top');
+    		$('.navbar-brand').addClass('navbar-not-brand');
+    		$('.navbar-link').addClass('navbar-not-link');
+        }
 	}
 
     lastScrollTop = st;

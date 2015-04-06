@@ -1,10 +1,14 @@
+{{! Use default.hbs Layout}}
 {{!< default}}
+{{! Use header.hbs for Header}}
 {{> header}}
 <div class="container">
 	<div class="row">
 		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 			<main class="main-ghost" role="main">
+				{{! Post per pages defined by Ghost settings. }}
 				{{#foreach posts}}
+					{{! Exclude link-blog posts }}
 					{{^has tag="link-blog"}}
 					<article class="article-ghost" role="article" itemscope itemtype="http://schema.org/Article">
 						<header class="postheader-ghost">
@@ -20,6 +24,7 @@
 				{{/foreach}}
 				{{#if pagination}}
 					<div class="pagination-ghost">
+						{{! Use pagenation.hbs }}
 						{{{pagination}}}
 					</div>
 				{{/if}}
@@ -28,4 +33,5 @@
 	</div>
 </div>
 <hr class="endpost-ghost">
+{{! Use footer.hbs }}
 {{> footer}}

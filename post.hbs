@@ -1,4 +1,6 @@
+{{! Use default.hbs Layout }}
 {{!< default}}
+{{! Use post_header.hbs Header }}
 {{> post_header}}
 <div class="container">
     <div class="row">
@@ -13,6 +15,7 @@
                 {{/post}}
                 {{#if pagination}}
                     <div class="pagination-ghost">
+                        {{! Use pagination.hbs }}
                         {{{pagination}}}
                     </div>
                 {{/if}}
@@ -21,4 +24,5 @@
     </div>
 </div>
 <hr class="endpost-ghost">
+{{! Use footer.hbs }}
 {{> footer}}

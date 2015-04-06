@@ -1,4 +1,6 @@
+{{! Use default.hbs Lyaout}}
 {{!< default}}
+{{! Use custom tag_header.hbs header instead of standard header }}
 {{> tag_header}}
 <div class="container">
 	<div class="row">
@@ -20,6 +22,7 @@
 				{{/foreach}}
 				{{#if pagination}}
 					<div class="pagination-ghost">
+						{{! Use pagenation.hbs }}
 						{{{pagination}}}
 					</div>
 				{{/if}}
@@ -28,4 +31,5 @@
 	</div>
 </div>
 <hr class="endpost-ghost">
+{{! Use footer.hbs }}
 {{> footer}}

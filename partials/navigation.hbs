@@ -1,3 +1,5 @@
+{{! Navigation helper class for Ghost. Conforms to Bootstrap navbar format.}}
+{{! Entries are defined in Ghost settings. }}
 <ul class="nav navbar-nav navbar-right">
 	{{#foreach navigation}}
 		<li class="nav-{{slug}} navbar-link" role="presentation"><a href="{{url absolute="true"}}">{{label}}</a></li>
