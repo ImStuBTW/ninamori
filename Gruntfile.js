@@ -143,6 +143,23 @@ module.exports = function(grunt) {
     [ 'libsass',
       'concat',
       'cssmin',
+      'imagemin'
+    ]
+  );
+  // Watch Task
+  grunt.registerTask('watch', 
+    [ 'libsass',
+      'concat',
+      'cssmin',
+      'imagemin',
+      'watch'
+    ]
+  );
+  // Browser-Sync Support
+  grunt.registerTask('browsersync', 
+    [ 'libsass',
+      'concat',
+      'cssmin',
       'imagemin',
       'browserSync',
       'watch'
