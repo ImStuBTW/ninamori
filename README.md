@@ -55,7 +55,7 @@ Your Ninamori instance should be ready for Ghost to use at this point. Login to 
 
 By default, Ninamori comes with a variety of cover images for posts based on their tag. The image files can be found in assets/images/. New tags can be defined in the partials/post_header.hbs file. It uses a simple Handlebar has/else waterfall, so a post with multile tags will use the first one referenced.
 
-```
+```hbs
 {{! Post Header has custom images based off of tags.}}
 {{#post}}
 {{#has tag="tech"}}
