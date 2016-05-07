@@ -1,5 +1,7 @@
 # Ninamori
 
+![Preview](https://raw.githubusercontent.com/ImStuartJones/ninamori/master/screenshot.png)
+
 A simple and clean theme for Ghost using Twitter Bootstrap 3, Font Awesome Icons, SASS, Bower, and Grunt.
 
 ## Features
